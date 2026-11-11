@@ -1,0 +1,42 @@
+/* 1. Box-sizing más intuitivo */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Quitar márgenes por defecto */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Mejoras de accesibilidad y motion */
+@media (prefers-reduced-motion: no-preference) {
+  html { interpolate-size: allow-keywords; }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Medios responsivos */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Heredar fuentes en formularios */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8–9. Mejoras de tipografía */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p { text-wrap: pretty; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+
+/* 10. Contexto de stacking */
+#root, #__next {
+  isolation: isolate;
+}

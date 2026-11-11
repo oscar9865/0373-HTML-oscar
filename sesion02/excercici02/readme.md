@@ -1,0 +1,1 @@
+Esto es un espacio unicamente para usuarios de la Salle Gràcia, específicamente de la clase de ASIX 1A.

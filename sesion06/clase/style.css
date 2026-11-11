@@ -1,0 +1,83 @@
+
+body{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "encabezado encabezado"
+    "cuerpo lateral"
+    "pie pie";
+}
+
+header{
+    grid-area: encabezado;
+    background-color: #6a6aca;
+}
+
+main{
+    grid-area: cuerpo;
+}
+
+aside{
+    grid-area: lateral;
+}
+
+footer{
+    grid-area: pie;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1.5fr .75fr .25fr 1fr 1.5fr;
+    grid-template-rows: 1fr .5fr .5fr 1fr;
+    gap: 1em;
+    height: 80vh;
+
+}
+
+section > * {
+    background-color: #00ff48;
+    border-radius: 8px;
+    padding: 1em;
+    
+}
+
+section > div:nth-child(2){
+    background-color: #ff0099;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 2;
+}
+
+section > div:nth-child(4){
+    background-color: #720ca8;
+    grid-row: 1 / span 3;
+    grid-column: -2 / span -1;
+}
+
+section > div:nth-child(5){
+    background-color: #77205d;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+}
+
+section > div:nth-child(6){
+    background-color: #e10f0f;
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 2;
+}
+
+section > div:nth-child(7){
+    background-color: #0fa5e1;
+    grid-row: 3 / span 2;
+    grid-column: -2 / span 1;
+}
+
+section > div:nth-child(8){
+    background-color: #bae10f;
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+}
+
+section > div:nth-child(9){
+    background-color: #e1900f;
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 2;
+}
