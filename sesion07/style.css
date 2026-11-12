@@ -1,0 +1,38 @@
+*, *::after, *::before {
+    
+body {
+    font-family: monospace;
+}
+
+form {
+    border: 3px solid black;
+    padding: 3em;
+    display: grid;
+    margin: 4px;
+    gap: 1em;
+    background-color: #757575;
+
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.comidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+}
+
+}

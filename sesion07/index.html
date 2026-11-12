@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header></header>
+
+    <section>
+        <h1>EL MEGA FORMULARIO</h1>
+    </section>
+
+    <main>
+        <form method = "get" action ="saludo.html" >
+        <label for="inputNombre">Nombre:</label>
+        <input type="text" required id="IdNombre" name="nameNombre">
+
+        <label for="inputEmail">Email:</label>
+        <input type="email" required id="IdEmail" name="nameEmail">
+
+        <label for="inputEdad">Edad:</label>
+        <input type="number" id="IdEdad" name="nameEdad">
+
+        <fieldset>
+            <legend>Acepto los términos y condiciones:</legend>
+            <label for="acepto terminos">Términos</label>
+            <input type="checkbox" value="acepto terminos" id="inputAceptasterminosycondiciones" name="nameCheck">
+            <label for="acepto condiciones">Condiciones</label>
+            <input type="checkbox" value="acepto condiciones" id="inputAceptasterminosycondiciones" name="nameCheck">
+        </fieldset>
+
+        <fieldset>
+            <legend>Mi equipo favorito:</legend>
+            <label for="Barsa">Barça</label>
+            <input type="radio" value="Barça" id="inputBarsa" name="nameRadio">
+            <label for="Madrid">Madrid</label>
+            <input type="radio" value="Madrid" id="inputMadrid" name="nameRadio">
+        </fieldset>
+
+        <fieldset>
+            <legend>Mi color favorito:</legend>
+            <label for="inputColor">Color favorito:</label>
+            <input type="color" value="#ff0000" id="inputColor" name="nameColor">
+        </fieldset>
+
+        <fieldset>
+            <legend>Fecha de nacimiento:</legend>
+            <label for="inputFecha">Fecha de nacimiento:</label>
+            <input type="date" value="2024-01-01" id="inputFecha" name="nameDate">
+        </fieldset>
+
+        <fieldset class="comidas">
+            <legend>Cuanto me gustan estas comidas:</legend>
+            <label for="inputRango">Helado:</label>
+            <input type="range" value="50" min="0" max="100" id="inputRango" name="nameRange">
+            <label for="inputRango">Pizza:</label>
+            <input type="range" value="50" min="0" max="100" id="inputRango" name="nameRange">
+            <label for="inputRango">Hamburguesa:</label>
+            <input type="range" value="50" min="0" max="100" id="inputRango" name="nameRange">
+        </fieldset>
+
+        <fieldset>
+            <legend>ID de fortnite</legend>
+            <label for="inputFortnite">ID de fortnite:</label>
+            <input type="text" value="" id="inputFortnite" name="nameText">
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo:</legend>
+            <label for="inputSexo">Sexo:</label>
+            <select id="inputSexo" name="nameSelect">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Aceite">Aceite</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Explica lore:</legend>
+            <label for="inputLore">Lore:</label>
+            <textarea id="inputLore" name="nameTextarea"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sube tu foto:</legend>
+            <label for="inputFoto">Foto:</label>
+            <input type="file" id="inputFoto" name="nameFile">
+        </fieldset>
+
+        <fieldset>
+            <legend>Contraseña:</legend>
+            <label for="inputPassword">Contraseña:</label>
+            <input type="password" id="inputPassword" name="namePassword">
+        </fieldset>
+    </div class="buttons">
+            <button>Borrar</button>
+            <button>Enviar</button>
+    </div>
+
+        </form>
+    </main>
+
+    <footer>
+        Derechos reservados
+    </footer>
+    
+</body>
+</html>
