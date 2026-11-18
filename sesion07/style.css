@@ -1,16 +1,31 @@
 *, *::after, *::before {
+box-sizing: border-box;
+}
+
     
 body {
     font-family: monospace;
+    background-image: url('FONDO.jpeg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px) brightness(.4);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
 }
 
 form {
+    color: aliceblue;
+    border-radius: 10px;
     border: 3px solid black;
     padding: 3em;
     display: grid;
     margin: 4px;
     gap: 1em;
-    background-color: #757575;
+    background: linear-gradient(to top, rgb(62, 8, 39), #2151b0);
 
     max-width: 300px;
     margin: 0 auto;
@@ -20,19 +35,32 @@ form {
     display: flex;
     justify-content: flex-end;
     gap: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+button:hover {
+    background-color: #03ba18;
+    transform: scale(1.05);
+}
 .fieldset {
     display: grid;
+    color: aliceblue;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
 
-.comidas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin: 0 auto;
+.legend {
+    border-radius: 10px;
+    font-size: 1.5em;
 }
 
+input,
+textarea,
+select {
+    border-radius: 10px;
 }

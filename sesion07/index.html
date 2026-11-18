@@ -6,108 +6,101 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
     <header></header>
 
     <section>
-        <h1>EL MEGA FORMULARIO</h1>
     </section>
 
     <main>
-        <form method = "get" action ="saludo.html" >
-        <label for="inputNombre">Nombre:</label>
-        <input type="text" required id="IdNombre" name="nameNombre">
+        <form method="get" action="saludo.html">
 
-        <label for="inputEmail">Email:</label>
-        <input type="email" required id="IdEmail" name="nameEmail">
+        <label for="inputNombre">Nombre completo:</label>
+        <input type="text" required id="inputNombre" name="nombreCompleto" placeholder="ej: Juan Pérez">
+
+        <label for="inputEmail">Correo electrónico:</label>
+        <input type="email" required id="inputEmail" name="correo" placeholder="ej: juan@ejemplo.com">
 
         <label for="inputEdad">Edad:</label>
-        <input type="number" id="IdEdad" name="nameEdad">
-
-        <fieldset>
-            <legend>Acepto los términos y condiciones:</legend>
-            <label for="acepto terminos">Términos</label>
-            <input type="checkbox" value="acepto terminos" id="inputAceptasterminosycondiciones" name="nameCheck">
-            <label for="acepto condiciones">Condiciones</label>
-            <input type="checkbox" value="acepto condiciones" id="inputAceptasterminosycondiciones" name="nameCheck">
-        </fieldset>
-
-        <fieldset>
-            <legend>Mi equipo favorito:</legend>
-            <label for="Barsa">Barça</label>
-            <input type="radio" value="Barça" id="inputBarsa" name="nameRadio">
-            <label for="Madrid">Madrid</label>
-            <input type="radio" value="Madrid" id="inputMadrid" name="nameRadio">
-        </fieldset>
-
-        <fieldset>
-            <legend>Mi color favorito:</legend>
-            <label for="inputColor">Color favorito:</label>
-            <input type="color" value="#ff0000" id="inputColor" name="nameColor">
-        </fieldset>
+        <input type="number" min="16" id="inputEdad" name="edad" placeholder="ej: 18">
 
         <fieldset>
             <legend>Fecha de nacimiento:</legend>
             <label for="inputFecha">Fecha de nacimiento:</label>
-            <input type="date" value="2024-01-01" id="inputFecha" name="nameDate">
+            <input type="date" id="inputFecha" name="fechaNacimiento">
         </fieldset>
 
-        <fieldset class="comidas">
-            <legend>Cuanto me gustan estas comidas:</legend>
-            <label for="inputRango">Helado:</label>
-            <input type="range" value="50" min="0" max="100" id="inputRango" name="nameRange">
-            <label for="inputRango">Pizza:</label>
-            <input type="range" value="50" min="0" max="100" id="inputRango" name="nameRange">
-            <label for="inputRango">Hamburguesa:</label>
-            <input type="range" value="50" min="0" max="100" id="inputRango" name="nameRange">
-        </fieldset>
 
         <fieldset>
-            <legend>ID de fortnite</legend>
-            <label for="inputFortnite">ID de fortnite:</label>
-            <input type="text" value="" id="inputFortnite" name="nameText">
-        </fieldset>
-
-        <fieldset>
-            <legend>Sexo:</legend>
-            <label for="inputSexo">Sexo:</label>
-            <select id="inputSexo" name="nameSelect">
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-                <option value="Aceite">Aceite</option>
-            </select>
-        </fieldset>
-
-        <fieldset>
-            <legend>Explica lore:</legend>
-            <label for="inputLore">Lore:</label>
-            <textarea id="inputLore" name="nameTextarea"></textarea>
-        </fieldset>
-
-        <fieldset>
-            <legend>Sube tu foto:</legend>
-            <label for="inputFoto">Foto:</label>
-            <input type="file" id="inputFoto" name="nameFile">
+            <legend>Nombre del jugador:</legend>
+            <label for="inputNickname">Nickname</label>
+            <input type="text" required minlength="3" maxlength="15" id="inputNickname" name="nickname" placeholder="ej: Juan123">
         </fieldset>
 
         <fieldset>
             <legend>Contraseña:</legend>
             <label for="inputPassword">Contraseña:</label>
-            <input type="password" id="inputPassword" name="namePassword">
+            <input type="password" required id="inputPassword" name="password" placeholder="ej: ********">
         </fieldset>
-    </div class="buttons">
-            <button>Borrar</button>
-            <button>Enviar</button>
-    </div>
+
+        <fieldset>
+            <legend>Videojuego del torneo:</legend>
+            <label for="inputJuego">Videojuego</label>
+            <select id="inputJuego" name="videojuego">
+                <option value="Valorant">Valorant</option>
+                <option value="Fortnite">Fortnite</option>
+                <option value="LeagueOfLegends">League of Legends</option>
+                <option value="CS2">Counter Strike 2</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Plataforma:</legend>
+            <label for="PC">PC</label>
+            <input type="radio" value="PC" id="PC" name="plataforma">
+
+            <label for="PlayStation">PlayStation</label>
+            <input type="radio" value="PlayStation" id="PlayStation" name="plataforma">
+
+            <label for="Xbox">Xbox</label>
+            <input type="radio" value="Xbox" id="Xbox" name="plataforma">
+        </fieldset>
+
+        <fieldset>
+            <legend>Disponibilidad horaria:</legend>
+
+            <label for="inputManana">Mañana</label>
+            <input type="checkbox" value="Manana" id="inputManana" name="disponibilidad">
+
+            <label for="inputTarde">Tarde</label>
+            <input type="checkbox" value="Tarde" id="inputTarde" name="disponibilidad">
+
+            <label for="inputNoche">Noche</label>
+            <input type="checkbox" value="Noche" id="inputNoche" name="disponibilidad">
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios adicionales:</legend>
+            <label for="inputComentarios">Comentarios:</label>
+            <textarea id="inputComentarios" name="comentarios" placeholder="Escribe aquí tus comentarios"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Aceptación de las normas:</legend>
+            <label for="inputNormas">Acepto las normas</label>
+            <a href="normas.html">Ver normas del torneo</a>
+            <input type="checkbox" required id="inputNormas" name="normas">
+        </fieldset>
+
+        <div class="buttons">
+            <button type="reset">Limpiar formulario</button>
+            <button type="submit">Inscripción</button>
+        </div>
 
         </form>
     </main>
 
-    <footer>
-        Derechos reservados
-    </footer>
-    
 </body>
 </html>
